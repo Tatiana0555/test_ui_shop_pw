@@ -6,24 +6,29 @@
 ---
 
 ## 📂 Структура проекта
+
 ```
 test_ui_shop_pw/
 │
-├── pages/               # Page Object Model
+├── pages/
+│   ├── locators/
+│   │   ├── cart_locators.py
+│   │   ├── category_locators.py
+│   │   └── product_locators.py
 │   ├── base_page.py
 │   ├── product_page.py
 │   ├── cart_page.py
 │   └── desks_page.py
 │
-├── tests/               # UI-тесты
+├── tests/
 │   ├── test_cart.py
-│   ├── test_product.py
-│   └── ...
+│   ├── test_category_desks.py
+│   └── test_product.py
 │
-├── conftest.py          # Pytest фикстуры
-├── requirements.txt     # Зависимости
-├── pytest.ini           # Настройки Pytest
-├── Dockerfile           # Docker-образ для CI/локального запуска
+├── conftest.py
+├── requirements.txt
+├── pytest.ini
+├── Dockerfile
 └── README.md
 ```
 
